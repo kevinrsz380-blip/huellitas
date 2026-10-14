@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Huellitas Comunitarias | Adopciones</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Arial, sans-serif; }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgb(51, 49, 219);
+            padding: 15px 25px;
+        }
+        header h1 { color: white; font-size: 22px; margin-bottom: 10px; }
+        .barra-navegacion { display: flex; gap: 12px; margin-top: 10px; }
+        .botone-nav {
+            text-decoration: none;
+            color: rgb(20, 31, 196);
+            background-color: rgb(134, 137, 214);
+            padding: 8px 16px;
+            border-radius: 5px;
+            font-size: 14px;
+            transition: background-color 0.3s, transform 0.15s;
+            box-shadow: 0 3px 0 rgba(0, 0, 0, 0.15);
+        }
+        .botone-nav:hover { background-color: aquamarine; color: rgb(47, 34, 223); }
+        .botone-nav:active { transform: translateY(3px); box-shadow: 0 0 0 rgba(0, 0, 0, 0.15); }
+        .botone-nav.activo {
+            background-color: rgb(95, 43, 226);
+            color: white;
+            font-weight: bold;
+            box-shadow: 0 3px 0 rgb(50, 20, 140);
+        }
+        .logo-cabecera {
+            max-width: 100px;
+            height: auto;
+            display: block;
+            border-radius: 50%;
+            border: 3px solid white;
+        }
+        main { display: flex; gap: 3%; padding: 25px; }
+        aside {
+            width: 25%;
+            background-color: rgb(177, 202, 120);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        aside h3 { color: rgb(40, 70, 20); margin: 15px 0 10px; font-size: 17px; }
+        aside h3:first-child { margin-top: 0; }
+        aside p { font-size: 14px; margin-bottom: 10px; }
+        .lista-lateral {
+            list-style: none;
+            padding-left: 0;
+        }
+        .lista-lateral li {
+            padding: 6px 0;
+            font-size: 14px;
+        }
+        section {
+            width: 75%;
+            background-color: rgb(119, 170, 87);
+            padding: 25px;
+            border-radius: 10px;
+        }
+        .titulo-galeria {
+            color: white;
+            font-size: 22px;
+            margin-bottom: 18px;
+        }
+        .galeria {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+        .ficha {
+            background-color: white;
+            border-radius: 10px;
+            padding: 15px;
+            text-align: center;
+        }
+        .ficha img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            display: block;
+        }
+        .ficha h3 { color: rgb(51, 49, 219); font-size: 19px; margin-bottom: 8px; }
+        .ficha p { font-size: 14px; margin-bottom: 5px; color: #222; }
+        .descripcion { font-style: italic; color: #333; min-height: 40px; }
+        .boton-ficha {
+            display: inline-block;
+            margin-top: 12px;
+            background-color: rgb(95, 43, 226);
+            color: white;
+            text-decoration: none;
+            padding: 9px 18px;
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: bold;
+            box-shadow: 0 3px 0 rgb(50, 20, 140);
+            transition: background-color 0.3s, transform 0.15s;
+        }
+        .boton-ficha:hover { background-color: aquamarine; color: rgb(20, 31, 196); }
+        .boton-ficha:active { transform: translateY(3px); box-shadow: 0 0 0 rgb(50, 20, 140); }
+        footer {
+            background-color: rgb(51, 49, 219);
+            color: white;
+            text-align: center;
+            padding: 18px;
+            margin-top: 30px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <h1>Huellitas Comunitarias</h1>
+            <nav class="barra-navegacion">
+                <a href="index.html" class="botone-nav">Inicio</a>
+                <a href="adopciones.html" class="botone-nav activo">Adopciones</a>
+                <a href="donaciones.html" class="botone-nav">Donaciones</a>
+            </nav>
+        </div>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-EJVjJkKgU46g1AuCdm5d24j-IEiuJ10JBtZnspL16w&s=10" alt="Logo" class="logo-cabecera">
+    </header>
+
+    <main>
+        <aside>
+            <h3>Antes de adoptar</h3>
+            <p>Adoptar es un compromiso de por vida. Asegúrate de tener tiempo, espacio y recursos para cuidar a tu nueva mascota.</p>
+
+            <h3>Requisitos</h3>
+            <ul class="lista-lateral">
+                <li>Ser mayor de edad</li>
+                <li>Espacio adecuado</li>
+                <li>Compromiso de esterilización</li>
+                <li>Amor y paciencia</li>
+            </ul>
+        </aside>
+
+        <section>
+            <h3 class="titulo-galeria">Ellos buscan un hogar</h3>
+
+            <div class="galeria">
+                <article class="ficha">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTV4Mix8xsWbAmFvPHrDU6D-BvBfb_uSdRWrFIiHJF1ig&s=10" alt="Rocky">
+                    <h3>Rocky</h3>
+                    <p><strong>Edad:</strong> 2 años</p>
+                    <p><strong>Raza:</strong> Mestizo</p>
+                    <p class="descripcion">Juguetón, cariñoso y muy leal.</p>
+                    <a href="#" class="boton-ficha">Quiero adoptarlo</a>
+                </article>
+
+                <article class="ficha">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUg-jJMJ7nUF0XWctjO-gDfAAn4lxC7l8-vmBhUWpd9w&s=10" alt="Luna">
+                    <h3>Luna</h3>
+                    <p><strong>Edad:</strong> 1 año</p>
+                    <p><strong>Raza:</strong> Criolla</p>
+                    <p class="descripcion">Tranquila, independiente y muy limpia.</p>
+                    <a href="#" class="boton-ficha">Quiero adoptarla</a>
+                </article>
+
+                <article class="ficha">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBGeRiUo0wK15tGNs-glhlMh2DEQSaC3SkYtPuqxcWwQ&s=10" alt="Canela">
+                    <h3>Canela</h3>
+                    <p><strong>Edad:</strong> 3 años</p>
+                    <p><strong>Raza:</strong> Labradora mestiza</p>
+                    <p class="descripcion">Obediente y protectora.</p>
+                    <a href="#" class="boton-ficha">Quiero adoptarla</a>
+                </article>
+
+                <article class="ficha">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVrYGCpkads01ThzVd4QIdHp_2IirKLnbVB9x0VmF4-w&s=10" alt="Mishi">
+                    <h3>Mishi</h3>
+                    <p><strong>Edad:</strong> 8 meses</p>
+                    <p><strong>Raza:</strong> Naranja criollo</p>
+                    <p class="descripcion">Curioso, juguetón y sociable.</p>
+                    <a href="#" class="boton-ficha">Quiero adoptarlo</a>
+                </article>
+
+                <article class="ficha">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1FMl0pUh0XaAQ2BxovhcMMHTtMhOgYaJlL0XlfDBccQ&s=10" alt="Toby">
+                    <h3>Toby</h3>
+                    <p><strong>Edad:</strong> 4 años</p>
+                    <p><strong>Raza:</strong> Mestizo mediano</p>
+                    <p class="descripcion">Rescatado, listo para dar amor.</p>
+                    <a href="#" class="boton-ficha">Quiero adoptarlo</a>
+                </article>
+
+                <article class="ficha">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWgiGJFaAejw4kPoYlwjOn0zvEGgq4K9Ug9ru5qmvODQ&s=10" alt="Nube">
+                    <h3>Nube</h3>
+                    <p><strong>Edad:</strong> 2 años</p>
+                    <p><strong>Raza:</strong> Siamesa mestiza</p>
+                    <p class="descripcion">Elegante, tranquila y cariñosa.</p>
+                    <a href="#" class="boton-ficha">Quiero adoptarla</a>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Proyecto PAEC 2026 · Huellitas Comunitarias · Adopta, no compres</p>
+    </footer>
+</body>
+</html>

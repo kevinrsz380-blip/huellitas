@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Huellitas Comunitarias | Donaciones</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Arial, sans-serif; }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgb(51, 49, 219);
+            padding: 15px 25px;
+        }
+        header h1 { color: white; font-size: 22px; margin-bottom: 10px; }
+        .barra-navegacion { display: flex; gap: 12px; margin-top: 10px; }
+        .botone-nav {
+            text-decoration: none;
+            color: rgb(20, 31, 196);
+            background-color: rgb(134, 137, 214);
+            padding: 8px 16px;
+            border-radius: 5px;
+            font-size: 14px;
+            transition: background-color 0.3s, transform 0.15s;
+            box-shadow: 0 3px 0 rgba(0, 0, 0, 0.15);
+        }
+        .botone-nav:hover { background-color: aquamarine; color: rgb(47, 34, 223); }
+        .botone-nav:active { transform: translateY(3px); box-shadow: 0 0 0 rgba(0, 0, 0, 0.15); }
+        .botone-nav.activo {
+            background-color: rgb(95, 43, 226);
+            color: white;
+            font-weight: bold;
+            box-shadow: 0 3px 0 rgb(50, 20, 140);
+        }
+        .logo-cabecera {
+            max-width: 100px;
+            height: auto;
+            display: block;
+            border-radius: 50%;
+            border: 3px solid white;
+        }
+        main { display: flex; gap: 3%; padding: 25px; }
+        aside {
+            width: 25%;
+            background-color: rgb(177, 202, 120);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        aside h3 { color: rgb(40, 70, 20); margin: 15px 0 10px; font-size: 17px; }
+        aside h3:first-child { margin-top: 0; }
+        aside p { font-size: 14px; margin-bottom: 10px; }
+        section {
+            width: 75%;
+            background-color: rgb(119, 170, 87);
+            padding: 25px;
+            border-radius: 10px;
+        }
+        article {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 18px;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+        }
+        article h3 { color: rgb(51, 49, 219); font-size: 19px; margin-bottom: 10px; }
+        article p { font-size: 15px; margin-bottom: 10px; }
+        .lista-necesidades {
+            list-style: none;
+            padding-left: 0;
+        }
+        .lista-necesidades li {
+            padding: 6px 0;
+            font-size: 14px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        }
+        .lista-necesidades li:last-child {
+            border-bottom: none;
+        }
+        footer {
+            background-color: rgb(51, 49, 219);
+            color: white;
+            text-align: center;
+            padding: 18px;
+            margin-top: 30px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <h1>Huellitas Comunitarias</h1>
+            <nav class="barra-navegacion">
+                <a href="index.html" class="botone-nav">Inicio</a>
+                <a href="adopciones.html" class="botone-nav">Adopciones</a>
+                <a href="donaciones.html" class="botone-nav activo">Donaciones</a>
+            </nav>
+        </div>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-EJVjJkKgU46g1AuCdm5d24j-IEiuJ10JBtZnspL16w&s=10" alt="Logo" class="logo-cabecera">
+    </header>
+
+    <main>
+        <aside>
+            <h3>¿Cómo ayudar?</h3>
+            <p>Puedes donar alimento, cobijas, artículos de limpieza o medicamentos. Cada aportación cuenta.</p>
+
+            <h3>Contacto</h3>
+            <p>Teléfono: (664) 123-4567</p>
+            <p>huellitas@gmail.com</p>
+        </aside>
+
+        <section>
+            <article>
+                <h3>Centro de Acopio</h3>
+                <p>Revisa la lista de necesidades y la información del centro de acopio.</p>
+            </article>
+
+            <article>
+                <h3>¿Qué necesitamos?</h3>
+                <ul class="lista-necesidades">
+                    <li>Alimento seco y húmedo para perros y gatos</li>
+                    <li>Cobijas y toallas limpias</li>
+                    <li>Artículos de limpieza (cloro, jabón, escobas)</li>
+                    <li>Medicamentos y antipulgas</li>
+                    <li>Correas, collares y platos</li>
+                    <li>Periódico para el área de cachorros</li>
+                </ul>
+            </article>
+
+            <article>
+                <h3>Información del Centro</h3>
+                <p><strong>Dirección:</strong> Av. Reforma #123, Col. Centro, Tijuana, B.C.</p>
+                <p><strong>Fechas:</strong> Del 1 al 30 de noviembre de 2026</p>
+                <p><strong>Horario:</strong> Lunes a sábado, de 9:00 a.m. a 5:00 p.m.</p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>Proyecto PAEC 2026 · Huellitas Comunitarias · Gracias por donar</p>
+    </footer>
+</body>
+</html>

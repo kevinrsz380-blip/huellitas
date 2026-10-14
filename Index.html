@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Huellitas Comunitarias</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Arial, sans-serif; }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgb(51, 49, 219);
+            padding: 15px 25px;
+        }
+        header h1 { color: white; font-size: 22px; margin-bottom: 10px; }
+        .barra-navegacion { display: flex; gap: 12px; margin-top: 10px; }
+        .botone-nav {
+            text-decoration: none;
+            color: rgb(20, 31, 196);
+            background-color: rgb(134, 137, 214);
+            padding: 8px 16px;
+            border-radius: 5px;
+            font-size: 14px;
+            transition: background-color 0.3s, transform 0.15s;
+            box-shadow: 0 3px 0 rgba(0, 0, 0, 0.15);
+        }
+        .botone-nav:hover { background-color: aquamarine; color: rgb(47, 34, 223); }
+        .botone-nav:active { transform: translateY(3px); box-shadow: 0 0 0 rgba(0, 0, 0, 0.15); }
+        .botone-nav.activo {
+            background-color: rgb(95, 43, 226);
+            color: white;
+            font-weight: bold;
+            box-shadow: 0 3px 0 rgb(50, 20, 140);
+        }
+        .logo-cabecera {
+            max-width: 100px;
+            height: auto;
+            display: block;
+            border-radius: 50%;
+            border: 3px solid white;
+        }
+        main { display: flex; gap: 3%; padding: 25px; }
+        aside {
+            width: 25%;
+            background-color: rgb(177, 202, 120);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        aside h3 { color: rgb(40, 70, 20); margin: 15px 0 10px; font-size: 17px; }
+        aside h3:first-child { margin-top: 0; }
+        aside p { font-size: 14px; margin-bottom: 10px; }
+        .lista-lateral {
+            list-style: none;
+            padding-left: 0;
+        }
+        .lista-lateral li {
+            padding: 6px 0;
+            font-size: 14px;
+        }
+        section {
+            width: 75%;
+            background-color: rgb(119, 170, 87);
+            padding: 25px;
+            border-radius: 10px;
+        }
+        article {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 18px;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+        }
+        article h3 { color: rgb(51, 49, 219); font-size: 19px; margin-bottom: 10px; }
+        article p { font-size: 15px; margin-bottom: 10px; }
+        .imagen-articulo {
+            width: 100%;
+            max-width: 500px;
+            height: 280px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-top: 12px;
+            display: block;
+        }
+        footer {
+            background-color: rgb(51, 49, 219);
+            color: white;
+            text-align: center;
+            padding: 18px;
+            margin-top: 30px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <h1>Huellitas Comunitarias</h1>
+            <nav class="barra-navegacion">
+                <a href="index.html" class="botone-nav activo">Inicio</a>
+                <a href="adopciones.html" class="botone-nav">Adopciones</a>
+                <a href="donaciones.html" class="botone-nav">Donaciones</a>
+            </nav>
+        </div>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-EJVjJkKgU46g1AuCdm5d24j-IEiuJ10JBtZnspL16w&s=10" alt="Logo" class="logo-cabecera">
+    </header>
+
+    <main>
+        <aside>
+            <h3>Proyecto PAEC</h3>
+            <p>Programa Aula, Escuela y Comunidad. Unimos lo aprendido en clase con las necesidades reales de nuestra comunidad.</p>
+
+            <h3>Categorías</h3>
+            <ul class="lista-lateral">
+                <li>Adopción responsable</li>
+                <li>Donaciones</li>
+                <li>Refugios locales</li>
+                <li>Concientización</li>
+            </ul>
+
+            <h3>Contacto</h3>
+            <p>huellitas@correo.com</p>
+        </aside>
+
+        <section>
+            <article>
+                <h3>Bienvenido a Huellitas Comunitarias</h3>
+                <p>Un proyecto que busca dar una segunda oportunidad a perritos y gatitos en situación de calle. Aquí encontrarás información sobre adopciones y cómo donar alimento, cobijas y artículos de limpieza.</p>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMm9KKU6AHmYzSf32NvEN5OspvVNYWr8Foa7OojICQkQ&s=10" alt="Perro y gato" class="imagen-articulo">
+            </article>
+
+            <article>
+                <h3>Nuestro propósito</h3>
+                <p>Facilitar la adopción responsable y la recaudación de donaciones para los refugios de nuestra comunidad. Adoptar no es solo dar un hogar: es salvar una vida.</p>
+            </article>
+
+            <article>
+                <h3>Un mensaje para ti</h3>
+                <p>Antes de comprar, adopta. Antes de abandonar, esteriliza. Antes de ignorar, ayuda.</p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>Proyecto PAEC 2026 · Huellitas Comunitarias · Hecho por Kevin Roblero</p>
+    </footer>
+</body>
+</html>
